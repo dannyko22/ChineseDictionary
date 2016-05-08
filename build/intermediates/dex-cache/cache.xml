@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_48c938d0c1b70e59cf891bbfc038cbedf0b73384.jar" />
+    </item>
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_5b1f93eea96f8573a4baa291ea67c9f4d0654d4f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_a5c1ed32476ec2144e88a987d4139868ac6294e1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_4b4405fd3cdf4627fb2a1d188aa31d5299abec80.jar" />
+    </item>
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_0c3de455de7bb8c483110e1f2147516cbec862bf.jar" />
+    </item>
+    <item
+        jar="C:\Program Files (x86)\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_66feac7f346ccebfd69a17af0b35bfb0a1b29637.jar" />
+    </item>
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\libs\MMSDK.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0caf3cd39dfd94dc3095e335d0b1ec9b7069b54e">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\MMSDK_4c6293b2a329e350f7f3d9d4248602e972c7ea10.jar" />
+    </item>
+    <item
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-6.1.71_d64fc5f9025aada6ab40c442abaaf8fa6d02ca97.jar" />
+    </item>
+
+</items>
