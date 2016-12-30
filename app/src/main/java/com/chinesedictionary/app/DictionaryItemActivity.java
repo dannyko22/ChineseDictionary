@@ -5,6 +5,7 @@ import android.content.ClipboardManager;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class DictionaryItemActivity extends ActionBarActivity {
+public class DictionaryItemActivity extends AppCompatActivity {
 
     String traditionalChineseChars;
     String simplifiedChineseChars;
@@ -25,7 +26,7 @@ public class DictionaryItemActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dictionary_item_activity);
 
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // Set the strings in the class declaration.
         Intent intent = getIntent();

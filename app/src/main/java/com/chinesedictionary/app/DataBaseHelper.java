@@ -106,7 +106,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         }catch(SQLiteException e){
 
-//database does't exist yet.
 
         }
 
@@ -223,6 +222,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         return items;
     }
+//database does't exist yet.
 
 
 }

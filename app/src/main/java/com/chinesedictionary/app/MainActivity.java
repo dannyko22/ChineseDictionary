@@ -9,9 +9,11 @@ import java.util.Comparator;
 import java.util.Locale;
 
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.SQLException;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -21,6 +23,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
@@ -38,7 +41,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 
-public class MainActivity extends ActionBarActivity  {
+public class MainActivity extends AppCompatActivity {
 
     DataBaseHelper myDbHelper;
     ListView listView;
@@ -199,6 +202,20 @@ public class MainActivity extends ActionBarActivity  {
         if (id == R.id.action_settings) {
             aboutMenuItem();
         }
+        else if (id == R.id.action_rate_me)
+        {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            //Try Google play
+            intent.setData(Uri.parse("market://details?id=com.chinesedictionary.app"));
+            if (!MyStartActivity(intent)) {
+                //Market (Google play) app seems not installed, let's try to open a webbrowser
+                intent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.chinesedictionary.app"));
+                if (!MyStartActivity(intent)) {
+                    //Well if this also fails, we have run out of options, inform the user.
+                    Toast.makeText(this, "Could not open Android market, please install the market app.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -209,5 +226,17 @@ public class MainActivity extends ActionBarActivity  {
 
         startActivity(new Intent(this,about_me.class));
 
+    }
+
+    private boolean MyStartActivity(Intent aIntent) {
+        try
+        {
+            startActivity(aIntent);
+            return true;
+        }
+        catch (ActivityNotFoundException e)
+        {
+            return false;
+        }
     }
 }

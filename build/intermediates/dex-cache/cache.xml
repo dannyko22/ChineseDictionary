@@ -2,60 +2,94 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_48c938d0c1b70e59cf891bbfc038cbedf0b73384.jar" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_b5468793f4a38d31d357d551c15c75da34649fab\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_5b1f93eea96f8573a4baa291ea67c9f4d0654d4f.jar" />
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_fc18a0fdc80391aaf9a93e629f1a6f03cf6a9cf4\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_a5c1ed32476ec2144e88a987d4139868ac6294e1.jar" />
+        sha1="070e6e7373f069fc1713087464f76d08119b76c8">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_506c271ef6031ac1762257b14a915910cad94a23\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_4b4405fd3cdf4627fb2a1d188aa31d5299abec80.jar" />
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_55d4be2598f87e11e3aca01f30602b75153d2a37\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_0c3de455de7bb8c483110e1f2147516cbec862bf.jar" />
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_c6b4e6bedd5f0e205f4d3dd12c3977dc010e4644\classes.dex" />
     </item>
     <item
-        jar="C:\Program Files (x86)\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_66feac7f346ccebfd69a17af0b35bfb0a1b29637.jar" />
+        sha1="beccae9dd2a837c93a9e90eea37214fce8a79de1">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4365451ba2e1bd2b108a75ff5d8f791e93534c3e\classes.dex" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_7b2b9e55c0f7dad4c50d4742ad0f056937535105\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\libs\MMSDK.jar"
-        jumboMode="false"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
         sha1="0caf3cd39dfd94dc3095e335d0b1ec9b7069b54e">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\MMSDK_4c6293b2a329e350f7f3d9d4248602e972c7ea10.jar" />
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\2\MMSDK_4c6293b2a329e350f7f3d9d4248602e972c7ea10\classes.dex" />
     </item>
     <item
+        is-multidex="true"
         jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\jars\classes.jar"
-        jumboMode="false"
+        jumboMode="true"
+        optimize="true"
         revision="21.1.2"
         sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-6.1.71_d64fc5f9025aada6ab40c442abaaf8fa6d02ca97.jar" />
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-6.1.71_d64fc5f9025aada6ab40c442abaaf8fa6d02ca97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_17132f885703adc6e9e0fb2011572674caf460bb\classes.dex" />
     </item>
 
 </items>
