@@ -7,5 +7,6 @@
     <string name="title_activity_dictionary_item">Dictionary Item</string>
     <string name="hello_world">Hello world!</string>
     <string name="banner_ad_unit_id">ca-app-pub-6778581968244410/5713393281</string>
+    <string name="admob_interstitial_id">ca-app-pub-6778581968244410/4780393284</string>
 
 </resources>

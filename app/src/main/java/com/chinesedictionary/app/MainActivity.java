@@ -37,8 +37,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.kobakei.ratethisapp.RateThisApp;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<DictionaryData> dictList;
     MyArrayAdapter myArrayAdapter;
     EditText searchTextBox;
+    private InterstitialAd interstitial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         searchTextBox.requestFocus();
+
+        // Monitor launch times and interval from installation
+        RateThisApp.onStart(this);
+        // If the criteria is satisfied, "Rate this app" dialog will be shown
+        RateThisApp.Config config = new RateThisApp.Config(1,2);
+        config.setUrl("market://details?id=com.chinesedictionary.app");
+        RateThisApp.init(config);
+        RateThisApp.showRateDialogIfNeeded(this);
     }
 
     private void initializeAdNetwork()
@@ -112,6 +124,20 @@ public class MainActivity extends AppCompatActivity {
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
+        // Prepare the Interstitial Ad
+        interstitial = new InterstitialAd(this);
+        // Insert the Ad Unit ID
+        interstitial.setAdUnitId(getString(R.string.admob_interstitial_id));
+
+        interstitial.loadAd(adRequest);
+        // Prepare an Interstitial Ad Listener
+        interstitial.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                // Call displayInterstitial() function
+                displayInterstitial();
+            }
+        });
     }
 
 
@@ -237,6 +263,13 @@ public class MainActivity extends AppCompatActivity {
         catch (ActivityNotFoundException e)
         {
             return false;
+        }
+    }
+
+    public void displayInterstitial() {
+        // If Ads are loaded, show Interstitial else show nothing.
+        if (interstitial.isLoaded()) {
+            interstitial.show();
         }
     }
 }
