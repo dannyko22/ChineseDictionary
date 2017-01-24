@@ -16,6 +16,8 @@ import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.InterstitialAd;
+
 
 /**
  * Created by Danny on 11/03/14.
@@ -24,14 +26,16 @@ public class MyArrayAdapter extends ArrayAdapter<DictionaryData> {
     private final Context context;
     private ArrayList<DictionaryData> itemsArrayList;
     protected String searchKey;
+    private InterstitialAd interstitialAd;
 
-    public MyArrayAdapter(Context context, ArrayList<DictionaryData> itemsArrayList, String search) {
+    public MyArrayAdapter(Context context, ArrayList<DictionaryData> itemsArrayList, String search, InterstitialAd _interstitial) {
 
         super(context, R.layout.row, itemsArrayList);
 
         this.context = context;
         this.itemsArrayList = itemsArrayList;
         this.searchKey = search;
+        interstitialAd = _interstitial;
     }
 
 
@@ -68,6 +72,11 @@ public class MyArrayAdapter extends ArrayAdapter<DictionaryData> {
         rowView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (interstitialAd!=null && interstitialAd.isLoaded())
+                {
+                    interstitialAd.show();
+                }
                 // TODO Auto-generated method stub
                 if (itemsArrayList.get(0)._id != -1) {
                     Intent i = new Intent(context, DictionaryItemActivity.class);

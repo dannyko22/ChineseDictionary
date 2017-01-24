@@ -60,16 +60,18 @@ public class MainActivity extends AppCompatActivity {
 
         myDbHelper = new DataBaseHelper(this);
 
+        initializeAdNetwork();
+
         //Get ListView from activity_main.xml
         listView = (ListView) findViewById(R.id.listView);
         dictList = new ArrayList<DictionaryData>();
         dictList.add(new DictionaryData(-1,"Search"));
-        myArrayAdapter = new MyArrayAdapter(this,dictList, "");
+        myArrayAdapter = new MyArrayAdapter(this,dictList, "", interstitial);
 
         //setListAdapter
         listView.setAdapter(myArrayAdapter);
 
-        initializeAdNetwork();
+
 
         try {
 
@@ -132,12 +134,12 @@ public class MainActivity extends AppCompatActivity {
 
         interstitial.loadAd(adRequest);
         // Prepare an Interstitial Ad Listener
-        interstitial.setAdListener(new AdListener() {
-            public void onAdLoaded() {
-                // Call displayInterstitial() function
-                displayInterstitial();
-            }
-        });
+//        interstitial.setAdListener(new AdListener() {
+//            public void onAdLoaded() {
+//                // Call displayInterstitial() function
+//                displayInterstitial();
+//            }
+//        });
     }
 
 
@@ -188,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
                 textViewResults.setText("0 results");
             }
 
-            myArrayAdapter = new MyArrayAdapter(MainActivity.this,dictList, searchTextBox.getText().toString());
+            myArrayAdapter = new MyArrayAdapter(MainActivity.this,dictList, searchTextBox.getText().toString(), interstitial);
             listView.setAdapter(myArrayAdapter);
             myArrayAdapter.notifyDataSetChanged();
             listView.invalidateViews();

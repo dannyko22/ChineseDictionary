@@ -75,21 +75,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\libs\MMSDK.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="0caf3cd39dfd94dc3095e335d0b1ec9b7069b54e">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\2\MMSDK_4c6293b2a329e350f7f3d9d4248602e972c7ea10\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
         sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
         <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-6.1.71_d64fc5f9025aada6ab40c442abaaf8fa6d02ca97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\libs\MMSDK.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="0caf3cd39dfd94dc3095e335d0b1ec9b7069b54e">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\2\MMSDK_4c6293b2a329e350f7f3d9d4248602e972c7ea10\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
-        sha1="070e6e7373f069fc1713087464f76d08119b76c8">
+        sha1="86079ea3b563b3fa86e14ab1330a94146622bf21">
         <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_506c271ef6031ac1762257b14a915910cad94a23\classes.dex" />
     </item>
     <item
@@ -129,21 +129,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="21.1.2"
-        sha1="185f4be2aaad14cb89874a7059a75501f253140c">
-        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4365451ba2e1bd2b108a75ff5d8f791e93534c3e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="21.1.2"
         sha1="867dad63c33388ff8c7644b236579355036d075f">
         <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_d03c3919252ad71f20360076ea11078301ecbd57\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="3f3b052d4f0f4ef381230b87494f0450dc1a89db">
+        <dex dex="C:\Users\Danny\AndroidStudioProjects\ChineseDictionary\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4365451ba2e1bd2b108a75ff5d8f791e93534c3e\classes.dex" />
     </item>
     <item
         is-multidex="false"
