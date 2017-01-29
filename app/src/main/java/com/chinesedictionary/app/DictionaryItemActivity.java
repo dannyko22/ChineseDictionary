@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,8 @@ public class DictionaryItemActivity extends AppCompatActivity {
     String pinyin;
     String yale;
     String meaning;
+    TTSManager ttsManagerCantonese = null;
+    TTSManager ttsManagerMandarin = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +60,42 @@ public class DictionaryItemActivity extends AppCompatActivity {
         TextView textViewMeaning = (TextView) findViewById(R.id.meaningTextView);
         textViewMeaning.setText(meaning);
 
+        ttsManagerCantonese = new TTSManager();
+        ttsManagerCantonese.initCantonese(this);
+
+        ttsManagerMandarin = new TTSManager();
+        ttsManagerMandarin.initMandarin(this);
+
+        ImageButton cantoneseButton = (ImageButton) findViewById(R.id.yaleImageButton);
+        ImageButton mandarinButton = (ImageButton) findViewById(R.id.pinyinImageButton);
+
+        if (yale.isEmpty())
+        {
+            cantoneseButton.setVisibility(View.GONE);
+            TextView traditionalTextLabel = (TextView) findViewById(R.id.yaleRomanizationTextView);
+            traditionalTextLabel.setVisibility(View.GONE);
+        }
+
+        if (pinyin.isEmpty())
+        {
+            mandarinButton.setVisibility(View.GONE);
+            TextView simplifiedTextLabel = (TextView) findViewById(R.id.pinyinRomanizationTextView);
+            simplifiedTextLabel.setVisibility(View.GONE);
+        }
+
+        cantoneseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ttsManagerCantonese.initQueue(traditionalChineseChars);
+            }
+        });
+
+        mandarinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ttsManagerMandarin.initQueue(traditionalChineseChars);
+            }
+        });
     }
 
 

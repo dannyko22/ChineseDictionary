@@ -23,16 +23,16 @@
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal">
+                android:layout_gravity="left"
+                android:gravity="left">
 
                 <Button
-                    style="?android:attr/buttonStyleSmall"
+                    android:theme="@style/AppTheme.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Copy\nTraditional"
                     android:id="@+id/traditionalButton"
-                    android:background="@drawable/buttonshape"
+
                     android:onClick="copyTraditional" />
 
                 <Space
@@ -40,12 +40,11 @@
                     android:layout_height="20px" />
 
                 <Button
-                    style="?android:attr/buttonStyleSmall"
+                    android:theme="@style/AppTheme.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Copy\nSimplified"
                     android:id="@+id/simplifiedButton"
-                    android:background="@drawable/buttonshape"
                     android:onClick="copySimplified" />
 
                 <Space
@@ -53,13 +52,12 @@
                     android:layout_height="20px" />
 
                 <Button
-                    style="?android:attr/buttonStyleSmall"
+                    android:theme="@style/AppTheme.Button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Copy\nMeaning"
                     android:id="@+id/meaningButton"
                     android:singleLine="false"
-                    android:background="@drawable/buttonshape"
                     android:onClick="copyMeaning" />
 
             </LinearLayout>
@@ -109,41 +107,91 @@
                 style="?android:listSeparatorTextViewStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="5dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Yale Romanization (Cantonese)"
-                android:id="@+id/textView" />
 
-            <TextView
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Yale"
-                android:id="@+id/yaleTextView"
-                android:textStyle="italic" />
+                android:layout_weight="1000"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Yale Romanization (Cantonese)"
+                    android:id="@+id/yaleRomanizationTextView" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Yale"
+                    android:id="@+id/yaleTextView"
+                    android:textStyle="italic" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:id="@+id/yaleImageButton"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/speaker2"/>
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+            </LinearLayout>
 
             <TextView
                 style="?android:listSeparatorTextViewStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="5dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="Pinyin (Mandarin)"
-                android:id="@+id/textView2" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Pinyin"
-                android:id="@+id/pinyinTextView"
-                android:textStyle="italic" />
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1000"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Pinyin (Mandarin)"
+                        android:id="@+id/pinyinRomanizationTextView" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Pinyin"
+                        android:id="@+id/pinyinTextView"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:id="@+id/pinyinImageButton"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/speaker2"/>
+
+                <Space
+                    android:layout_width="20px"
+                    android:layout_height="20px" />
+
+            </LinearLayout>
 
             <TextView
                 style="?android:listSeparatorTextViewStyle"
